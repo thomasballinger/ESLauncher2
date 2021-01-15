@@ -129,7 +129,7 @@ impl Instance {
             .width(Length::Fill)
             .push(
                 Column::new()
-                    .push(Text::new(&self.name).size(24))
+                    .push(Text::new(&self.name).size(22))
                     .push(Text::new(format!("Version: {:.*}", 32, self.version)).size(10))
                     .push(
                         Text::new(format!(
@@ -142,7 +142,7 @@ impl Instance {
             .push(Space::new(Length::Fill, Length::Shrink))
             .push(
                 Row::new()
-                    .spacing(10)
+                    .spacing(8)
                     .push(
                         Button::new(&mut self.debug_button, style::debug_icon())
                             .style(style::Button::Icon)

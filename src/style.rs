@@ -14,10 +14,10 @@ pub const LOG_FONT: Font = Font::External {
 fn icon(unicode: char) -> Text {
     Text::new(&unicode.to_string())
         .font(ICONS)
-        .width(Length::Units(20))
+        .width(Length::Units(18))
         .horizontal_alignment(HorizontalAlignment::Center)
         .vertical_alignment(VerticalAlignment::Center)
-        .size(20)
+        .size(18)
 }
 
 pub fn pause_icon() -> Text {
